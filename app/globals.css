@@ -27,3 +27,68 @@ nav ul{
 nav h2 {
   color: #4CAF50;
 }
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 60px;
+  gap: 40px;
+}
+
+.hero-content {
+  flex:1;
+}
+
+.hero-content h1{
+  font-size: 64px;
+  margin-bottom:20px;
+}
+
+.hero-content p{
+  margin-bottom: 20px;
+  font-size: 18px;
+}
+
+.hero-content{
+  padding: 14px 28px;
+  border: none;
+  background-color: #a6ce39;
+  color:white;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.hero-image{
+  flex: 1;
+}
+
+.hero-image img{
+  width: 100%;
+  max-width: 600px;
+  border-radius: 20px;
+}
+
+section {
+  padding: 60px;
+}
+
+section h2 {
+  margin-bottom: 30px;
+  font-size: 36px;
+}
+
+section div {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+article {
+  background-color: white;
+  padding: 30px;
+  border-radius: 16px;
+  min-width: 180px;
+  text-align: center;
+  box-shadow: 0 4px  10px rgba(0, 0, 0, 0.05);
+}
