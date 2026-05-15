@@ -341,3 +341,23 @@ article h3 {
     gap: 40px;
   }
 }
+
+/* Efectos de hover  */
+
+article:hover,
+.service-card:hover {
+  transform: translateY(-8px);
+}
+
+.about-content button:hover,
+.hero-content button:hover {
+  opacity: 0.9;
+}
+
+.footer-socials svg {
+  transition: 0.3s ease;
+}
+
+.footer-socials svg:hover {
+  transform: scale(1.15);
+}
