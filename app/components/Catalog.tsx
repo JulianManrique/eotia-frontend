@@ -6,10 +6,10 @@ export default function Catalog() {
       <div className="catalog-container">
         <article>
           <img
-            src="https://images.unsplash.com/photo-1571115764595-644a1f56a55c"
+            src="https://images.unsplash.com/photo-1535141192574-5d4897c12636?q=80&w=1200&auto=format&fit=crop"
             alt="Tartas"
           />
-          <h3>Tartas</h3>
+          <h3>Tortas</h3>
         </article>
 
         <article>

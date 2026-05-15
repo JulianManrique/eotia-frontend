@@ -3,6 +3,7 @@ import Hero from "./components/Hero"
 import Catalog from "./components/Catalog";
 import Services from "./components/Services";
 import About from "./components/About";
+import Footer from "./components/Footer";
 
 export default function Home(){
   return(
@@ -12,6 +13,7 @@ export default function Home(){
       <Catalog/>
       <Services/>
       <About/>
+      <Footer/>
     </main>
   );
 }
