@@ -18,27 +18,36 @@ body {
 
 
 .logo {
-  object-fit: contain;
+  border-radius: 50%;
+  object-fit: cover;
+  cursor: pointer;
+  position: relative;
+  top: 10px;
 }
-
 
 nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 18px 70px;
+  padding: 6px 70px;
   background-color: rgba(255, 255, 255, 0.96);
   backdrop-filter: blur(10px);
   position: sticky;
   top: 0;
   z-index: 1000;
   border-bottom: 1px solid #f1f1f1;
+  height: 70px;
+  overflow: visible;
 }
 
 nav ul {
   display: flex;
-  gap: 40px;
+  gap: 34px;
   list-style: none;
+  align-items: center;
+  flex: 1;
+  justify-content: center;
+  margin-top: 8px;
 }
 
 nav h2 {
@@ -51,12 +60,53 @@ nav h2 {
 
 nav li {
   cursor: pointer;
-  transition: color 0.3s ease;
+  transition: 0.3s ease;
+  font-size: 13px;
+  letter-spacing: 1.5px;
+  font-weight: 500;
 }
 
 nav li:hover {
   color: #9CAF55;
 }
+
+
+.nav-icons {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  font-size: 18px;
+  color: #444;
+  cursor: pointer;
+}
+
+.nav-icons svg {
+  transition: 0.3s ease;
+}
+
+.nav-icons svg:hover {
+  color: #9CAF55;
+}
+
+/* genera el subrrayado en el texto del navbar */
+.active-link {
+  position: relative;
+  color: #9CAF55;
+  display: inline-block;
+}
+
+
+.active-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -8px;
+  width: 100%;
+  height: 2px;
+  background-color: #9CAF55;
+  border-radius: 10px;
+}
+
 
 .hero {
   display: flex;

@@ -7,13 +7,15 @@ export default function Navbar() {
   <Image
     src="/logo.jpeg"
     alt="Eotia Logo"
-    width={90}
-    height={90}
+    width={150}
+    height={150}
     className="logo"
   />
 
   <ul>
-    <li>Inicio</li>
+    <li>
+      <a className="active-link">Inicio</a>
+    </li>
     <li>Productos</li>
     <li>Personalizados</li>
     <li>Nosotros</li>
