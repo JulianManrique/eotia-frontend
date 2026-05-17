@@ -1,16 +1,21 @@
+import Link from "next/link";
+
 export default function Catalog() {
   return (
     <section className="catalog">
       <h2>Nuestros Productos</h2>
 
       <div className="catalog-container">
-        <article>
-          <img
-            src="https://images.unsplash.com/photo-1535141192574-5d4897c12636?q=80&w=1200&auto=format&fit=crop"
-            alt="Tartas"
-          />
-          <h3>Tortas</h3>
-        </article>
+
+        <Link href="/catalog">
+          <article>
+            <img
+              src="https://images.unsplash.com/photo-1535141192574-5d4897c12636?q=80&w=1200&auto=format&fit=crop"
+              alt="Tartas"
+            />
+            <h3>Tortas</h3>
+          </article>
+        </Link>
 
         <article>
           <img
@@ -35,6 +40,7 @@ export default function Catalog() {
           />
           <h3>Cheesecake</h3>
         </article>
+
       </div>
     </section>
   );
