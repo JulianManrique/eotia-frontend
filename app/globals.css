@@ -395,7 +395,7 @@ article h3 {
 
 .catalog-card p {
   padding: 0 20px 20px;
-  color: #6
+  color: #666;
 }
 
 .catalog-card button {
@@ -406,6 +406,55 @@ article h3 {
   color: white;
   border-radius: 30px;
   cursor: pointer;
+}
+
+
+
+/* seccion detalle de producto  */
+.product-page {
+  padding: 120px 70px;
+  min-height: 100vh;
+  background: #fffdf8;
+}
+
+.product-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+}
+
+.product-container img {
+  width: 100%;
+  border-radius: 20px;
+  object-fit: cover;
+}
+
+.product-info h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.product-info p {
+  font-size: 18px;
+  color: #666;
+  line-height: 1.7;
+  margin-bottom: 30px;
+}
+
+.product-info h2 {
+  font-size: 32px;
+  margin-bottom: 30px;
+}
+
+.product-info button {
+  padding: 14px 28px;
+  border: none;
+  border-radius: 40px;
+  background: #9CAF55;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
 }
 
 
