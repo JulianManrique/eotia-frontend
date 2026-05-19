@@ -1,3 +1,5 @@
+"use client";
+
 import Image from "next/image";
 import { FiSearch, FiUser, FiShoppingCart } from "react-icons/fi";
 

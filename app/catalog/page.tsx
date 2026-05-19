@@ -13,10 +13,10 @@ export default function CatalogPage() {
           />
           <h2>Torta de Chocolate</h2>
           <p>Deliciosa torta artesanal.</p>
-          <Link href="/producto/torta-chocolate">
+          <Link href="/catalog/tortas">
             <button>Ver producto</button>
           </Link>
-        </article>
+        </article> 
 
         <article className="catalog-card">
           <img
