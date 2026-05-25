@@ -2,17 +2,20 @@
 
 import Image from "next/image";
 import { FiSearch, FiUser, FiShoppingCart } from "react-icons/fi";
+import Link from "next/link";
 
 export default function Navbar() {
   return (
     <nav>
-  <Image
-    src="/logo.jpeg"
-    alt="Eotia Logo"
-    width={150}
-    height={150}
-    className="logo"
-  />
+  <Link href="/"> 
+    <Image
+      src="/logo.jpeg"
+      alt="Eotia Logo"
+      width={150}
+      height={150}
+      className="logo"
+    />
+  </Link>
 
   <ul>
     <li>

@@ -1,5 +1,6 @@
 import Navbar from "@/app/components/Navbar";
 import Footer from "@/app/components/Footer";
+import Link from "next/link";
 
 export default function ProductPage() {
   return (
@@ -23,7 +24,9 @@ export default function ProductPage() {
 
             <h2>$120.000</h2>
 
-            <button>Comprar ahora</button>
+            <Link href="/producto/torta-chocolate">
+              <button>Ver producto</button>
+            </Link>
           </div>
 
         </div>
