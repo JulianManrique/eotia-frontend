@@ -58,6 +58,42 @@ const products = {
     image:
       "https://images.unsplash.com/photo-1533134242443-d4fd215305ad?q=80&w=1200&auto=format&fit=crop",
   },
+
+    "alfajor-clasico": {
+    category: "alfajores",
+    name: "Alfajor Clásico",
+    description: "Alfajor tradicional relleno de arequipe artesanal.",
+    price: "$8.000",
+    image:
+      "https://images.unsplash.com/photo-1519869325930-281384150729?q=80&w=1200&auto=format&fit=crop",
+  },
+
+  "alfajor-chocolate": {
+    category: "alfajores",
+    name: "Alfajor de Chocolate",
+    description: "Cubierto con chocolate premium y relleno cremoso.",
+    price: "$9.000",
+    image:
+      "https://images.unsplash.com/photo-1578985545062-69928b1d9587?q=80&w=1200&auto=format&fit=crop",
+  },
+
+  "alfajor-arequipe": {
+    category: "alfajores",
+    name: "Alfajor de Arequipe",
+    description: "Generoso relleno de arequipe artesanal.",
+    price: "$8.500",
+    image:
+      "https://images.unsplash.com/photo-1551024601-bec78aea704b?q=80&w=1200&auto=format&fit=crop",
+  },
+
+  "alfajor-premium": {
+    category: "alfajores",
+    name: "Alfajor Premium",
+    description: "Nuestra versión gourmet con ingredientes seleccionados.",
+    price: "$10.000",
+    image:
+      "https://images.unsplash.com/photo-1509440159596-0249088772ff?q=80&w=1200&auto=format&fit=crop",
+  },
 };
 
 export default products;
