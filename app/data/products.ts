@@ -1,4 +1,7 @@
 const products = {
+
+  // tortas
+
   "torta-chocolate": {
     category: "tortas",
     name: "Torta de Chocolate",
@@ -59,6 +62,8 @@ const products = {
       "https://images.unsplash.com/photo-1533134242443-d4fd215305ad?q=80&w=1200&auto=format&fit=crop",
   },
 
+  // alfajor
+
     "alfajor-clasico": {
     category: "alfajores",
     name: "Alfajor Clásico",
@@ -91,6 +96,44 @@ const products = {
     name: "Alfajor Premium",
     description: "Nuestra versión gourmet con ingredientes seleccionados.",
     price: "$10.000",
+    image:
+      "https://images.unsplash.com/photo-1509440159596-0249088772ff?q=80&w=1200&auto=format&fit=crop",
+  },
+
+  // galletas
+
+    "galletas-chocolate": {
+    category: "galletas",
+    name: "Galletas con Chispas de Chocolate",
+    description: "Crujientes galletas artesanales con chispas de chocolate.",
+    price: "$7.000",
+    image:
+      "https://images.unsplash.com/photo-1499636136210-6f4ee915583e?q=80&w=1200&auto=format&fit=crop",
+  },
+
+  "galletas-avena": {
+    category: "galletas",
+    name: "Galletas de Avena y Pasas",
+    description: "Elaboradas con avena premium y pasas seleccionadas.",
+    price: "$7.500",
+    image:
+      "https://images.unsplash.com/photo-1558961363-fa8fdf82db35?q=80&w=1200&auto=format&fit=crop",
+  },
+
+  "red-velvet-cookie": {
+    category: "galletas",
+    name: "Red Velvet Cookie",
+    description: "Suave galleta Red Velvet con chocolate blanco.",
+    price: "$8.000",
+    image:
+      "https://images.unsplash.com/photo-1590080875515-8a3a8dc5735e?q=80&w=1200&auto=format&fit=crop",
+  },
+
+  "doble-chocolate": {
+    category: "galletas",
+    name: "Galleta Doble Chocolate",
+    description: "Intenso sabor a cacao con trozos de chocolate premium.",
+    price: "$8.500",
     image:
       "https://images.unsplash.com/photo-1509440159596-0249088772ff?q=80&w=1200&auto=format&fit=crop",
   },
