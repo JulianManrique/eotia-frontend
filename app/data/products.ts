@@ -52,16 +52,6 @@ const products = {
       "https://images.unsplash.com/photo-1565958011703-44f9829ba187?q=80&w=1200&auto=format&fit=crop",
   },
 
-  "cheesecake-mora": {
-    category: "tortas",
-    name: "Cheesecake de Mora",
-    description:
-      "Cheesecake artesanal con mora natural premium.",
-    price: "$122.000",
-    image:
-      "https://images.unsplash.com/photo-1533134242443-d4fd215305ad?q=80&w=1200&auto=format&fit=crop",
-  },
-
   // alfajor
 
     "alfajor-clasico": {
@@ -137,6 +127,17 @@ const products = {
     image:
       "https://images.unsplash.com/photo-1509440159596-0249088772ff?q=80&w=1200&auto=format&fit=crop",
   },
+
+  // Cheseecake
+  "cheesecake-mora": {
+   category: "cheesecake",
+   name: "Cheesecake de Mora",
+   description: "Cheesecake artesanal con mora natural premium.",
+   price: "$122.000",
+   image:
+    "https://images.unsplash.com/photo-1533134242443-d4fd215305ad?q=80&w=1200&auto=format&fit=crop",
+  },
+
 };
 
 export default products;
