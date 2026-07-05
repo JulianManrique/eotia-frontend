@@ -1,5 +1,5 @@
 import Navbar from "@/app/components/Navbar";
-import Footer from "@/app/components/Footer";
+import Footer from "@/app/components/Footer/Footer";
 import Link from "next/link";
 import products from "@/app/data/products";
 
