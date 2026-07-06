@@ -9,12 +9,12 @@ import {
   HiOutlineMapPin,
 } from "react-icons/hi2";
 
+import Link from "next/link";
 import styles from "./Footer.module.css";
 
 export default function Footer() {
   return (
     <footer className={styles.footer}>
-
       <div className={styles.footerContainer}>
 
         {/* Marca */}
@@ -30,9 +30,34 @@ export default function Footer() {
           </p>
 
           <div className={styles.footerSocials}>
-            <FaInstagram />
-            <FaFacebook />
-            <FaWhatsapp />
+
+            <a
+              href="https://instagram.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Instagram"
+            >
+              <FaInstagram />
+            </a>
+
+            <a
+              href="https://facebook.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Facebook"
+            >
+              <FaFacebook />
+            </a>
+
+            <a
+              href="https://wa.me/573000000000"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="WhatsApp"
+            >
+              <FaWhatsapp />
+            </a>
+
           </div>
 
         </div>
@@ -45,15 +70,25 @@ export default function Footer() {
 
           <ul>
 
-            <li>Inicio</li>
+            <li>
+              <Link href="/">Inicio</Link>
+            </li>
 
-            <li>Productos</li>
+            <li>
+              <Link href="/catalog/tortas">Productos</Link>
+            </li>
 
-            <li>Personalizados</li>
+            <li>
+              <Link href="/#services">Personalizados</Link>
+            </li>
 
-            <li>Nosotros</li>
+            <li>
+              <Link href="/#about">Nosotros</Link>
+            </li>
 
-            <li>Contacto</li>
+            <li>
+              <Link href="/#contact">Contacto</Link>
+            </li>
 
           </ul>
 

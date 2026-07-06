@@ -1,17 +1,18 @@
 .footer {
-  background: #B5C99A;
-  color: #2F3E2E;
-  padding: 4rem 2rem 2rem;
+  background: #b5c99a;
+  color: #2f3e2e;
   margin-top: 5rem;
 }
 
 .footerContainer {
   max-width: 1200px;
   margin: 0 auto;
+  padding: 4rem 2rem 3rem;
 
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 4rem;
+  grid-template-columns: 1.3fr 1fr 1fr 1.2fr;
+  gap: 3rem;
+  align-items: start;
 }
 
 .footerBrand h2 {
@@ -75,6 +76,26 @@
   text-align: center;
   color: #4D5B4C;
   font-size: .9rem;
+}
+
+.footerColumn ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footerColumn li {
+  margin-bottom: 0.9rem;
+}
+
+.footerColumn a {
+  text-decoration: none;
+  color: inherit;
+  transition: color .3s;
+}
+
+.footerColumn a:hover {
+  color: #5d7a37;
 }
 
 /* Responsive */
