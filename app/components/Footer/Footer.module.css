@@ -98,6 +98,50 @@
   color: #5d7a37;
 }
 
+.footerSubscribe h3 {
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.footerSubscribe p {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin-bottom: 1.2rem;
+  color: #4b5b47;
+}
+
+.subscribeForm {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.subscribeForm input {
+  width: 100%;
+  padding: 0.85rem 1rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  outline: none;
+}
+
+.subscribeForm button {
+  width: 100%;
+  padding: 0.9rem;
+  border: none;
+  border-radius: 8px;
+  background: #5d7a37;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all .3s ease;
+}
+
+.subscribeForm button:hover {
+  background: #4d6730;
+}
+
 /* Responsive */
 
 @media (max-width: 900px) {
