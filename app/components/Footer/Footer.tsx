@@ -11,17 +11,27 @@ import {
 
 import Link from "next/link";
 import styles from "./Footer.module.css";
+import Image from "next/image";
 
 export default function Footer() {
   return (
     <footer className={styles.footer}>
       <div className={styles.footerContainer}>
+        <div className={styles.logoContainer}>
+          <Image
+            src="/logo_5.svg"
+            alt="EOTIA"
+            fill
+            priority
+            className={styles.logo}
+          />
+        </div>
 
         {/* Marca */}
 
         <div className={styles.footerBrand}>
 
-          <h2>Eotia</h2>
+
 
           <span>PASTELERÍA ARTESANAL</span>
 
