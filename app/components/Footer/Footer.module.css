@@ -13,14 +13,22 @@
 ========================================== */
 
 .footerContainer {
-  max-width: 1200px;
+  max-width: 1180px;
   margin: 0 auto;
-  padding: 4rem 2rem;
+  padding: 3.5rem 2rem;
 
   display: grid;
-  grid-template-columns: 1.3fr 1fr 1fr 1.2fr;
-  gap: 3rem;
+
+  grid-template-columns:
+    220px
+    220px
+    180px
+    200px;
+
+  justify-content: space-between;
   align-items: start;
+
+  column-gap: 2rem;
 }
 
 /* ==========================================
@@ -29,21 +37,26 @@
 
 .logoContainer {
   position: relative;
-  width: 150px;
+  width: 160px;
   aspect-ratio: 1080 / 527;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
 }
 
 .logo {
   object-fit: contain;
+  
 }
 
 /* ==========================================
    MARCA
 ========================================== */
 
+.footerBrand {
+  padding-top: .2rem;
+}
+
 .footerBrand p {
-  max-width: 260px;
+  max-width: 240px;
   color: #4b5b47;
   line-height: 1.8;
   font-size: .95rem;
@@ -52,12 +65,12 @@
 .footerSocials {
   display: flex;
   gap: 1rem;
-  margin-top: 2rem;
+  margin-top: 1.8rem;
 }
 
 .footerSocials a {
   color: #5d7a37;
-  font-size: 1.5rem;
+  font-size: 1.45rem;
   transition: .25s ease;
 }
 
@@ -70,9 +83,13 @@
    COLUMNAS
 ========================================== */
 
+.footerColumn {
+  padding-top: .2rem;
+}
+
 .footerColumn h3,
 .footerSubscribe h3 {
-  margin-bottom: 1.2rem;
+  margin-bottom: 1.25rem;
 
   font-size: .95rem;
   font-weight: 700;
@@ -92,7 +109,7 @@
   align-items: center;
   gap: .65rem;
 
-  margin-bottom: 1rem;
+  margin-bottom: .95rem;
 }
 
 .footerColumn li svg {
@@ -115,6 +132,10 @@
    SUSCRIPCIÓN
 ========================================== */
 
+.footerSubscribe {
+  padding-top: .2rem;
+}
+
 .footerSubscribe p {
   margin-bottom: 1.25rem;
 
@@ -127,6 +148,7 @@
   display: flex;
   flex-direction: column;
   gap: .85rem;
+  max-width: 220px;
 }
 
 .subscribeForm input {
@@ -167,10 +189,10 @@
 ========================================== */
 
 .footerBottom {
-  margin-top: 3rem;
-  padding: 1.5rem 0;
+  margin-top: 2.5rem;
+  padding: 1.4rem 0;
 
-  border-top: 1px solid rgba(63,95,73,.15);
+  border-top: 1px solid rgba(63, 95, 73, .15);
 
   text-align: center;
 
@@ -186,7 +208,12 @@
 
   .footerContainer {
     grid-template-columns: 1fr;
+    gap: 2.5rem;
     text-align: center;
+  }
+
+  .logoContainer {
+    margin: 0 auto 1.5rem;
   }
 
   .footerBrand p {
@@ -201,4 +228,7 @@
     justify-content: center;
   }
 
+  .subscribeForm {
+    margin: 0 auto;
+  }
 }

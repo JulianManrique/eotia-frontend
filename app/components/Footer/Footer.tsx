@@ -17,24 +17,20 @@ export default function Footer() {
   return (
     <footer className={styles.footer}>
       <div className={styles.footerContainer}>
-        <div className={styles.logoContainer}>
+        
+        {/* Marca */}
+      
+        <div className={styles.footerBrand}>
+          <div className={styles.logoContainer}>
           <Image
-            src="/logo_5.svg"
+            src="/Logo_5.png"
             alt="EOTIA"
             fill
             priority
             className={styles.logo}
           />
         </div>
-
-        {/* Marca */}
-
-        <div className={styles.footerBrand}>
-
-
-
-          <span>PASTELERÍA ARTESANAL</span>
-
+          
           <p>
             Dulces momentos hechos para inspirar, compartir y celebrar.
           </p>
@@ -124,7 +120,7 @@ export default function Footer() {
 
             <li>
               <HiOutlineMapPin />
-              <span>Cali, Colombia</span>
+              <span>Bogota, Colombia</span>
             </li>
 
           </ul>
