@@ -14,29 +14,31 @@ export default function CheesecakePage() {
 
       <main className="catalog-page">
 
-        <section className="catalog-header">
-          <h1>Nuestros Cheesecakes</h1>
+        {/* Hero */}
 
-          <p>
-            Una selección exclusiva de cheesecakes artesanales.
+        <section className="cheesecake-hero">
+
+          <div className="hero-subtitle">
+
+            <span className="line"></span>
+
+            <p>PASTELERÍA ARTESANAL</p>
+
+            <span className="line"></span>
+
+          </div>
+
+          <h1>Nuestros Cheesecake</h1>
+
+          <p className="hero-description">
+            Suaves, cremosos y elaborados con los mejores ingredientes.
+            <br />
+            El equilibrio perfecto entre textura y sabor.
           </p>
+
         </section>
 
-        <section className="catalog-hero">
-
-          <img
-            src="https://images.unsplash.com/photo-1533134242443-d4fd215305ad?q=80&w=1600&auto=format&fit=crop"
-            alt="Cheesecake"
-          />
-
-          <h2>Próximamente más sabores</h2>
-
-          <p>
-            Estamos preparando nuevas referencias de temporada para ofrecerte
-            una experiencia aún más deliciosa.
-          </p>
-
-        </section>
+        {/* Productos */}
 
         <section className="catalog-grid">
 
