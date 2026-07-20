@@ -1,17 +1,18 @@
 import Image from "next/image";
+import styles from "./Hero.module.css";
 
 export default function Hero() {
   return (
-    <section className="hero">
+    <section className={styles.hero}>
 
-      <div className="hero-content">
+      <div className={styles.heroContent}>
 
-        <span className="hero-subtitle">
+        <span className={styles.heroSubtitle}>
           PASTELERÍA ARTESANAL
         </span>
 
-        <h1 className="hero-title">
-          Creamos momentos
+        <h1 className={styles.heroTitle}>
+          Creamos   
           <br />
           inolvidables
         </h1>
@@ -22,28 +23,28 @@ export default function Hero() {
           <span className="line"></span>
         </div>
 
-        <p className="hero-description">
+        <p className={styles.heroDescription}>
           Pastelería artesanal hecha con ingredientes seleccionados
           para celebrar cada ocasión especial.
         </p>
 
-        <div className="hero-buttons">
+        <div className={styles.heroButtons}>
 
-          <button className="btn-primary">
+          <button className={styles.primaryButton}>
             Personaliza tu pedido
           </button>
 
         </div>
 
-        <div className="hero-dots">
-          <span className="active"></span>
+        <div className={styles.heroDots}>
+          <span className={styles.active}></span>
           <span></span>
           <span></span>
         </div>
 
       </div>
 
-      <div className="hero-image">
+      <div className={styles.heroImage}>
 
         <Image
           src="/hero-cake.jpeg"
@@ -54,9 +55,9 @@ export default function Hero() {
 
       </div>
 
-      <button className="hero-prev">❮</button>
+      <button className={styles.heroPrev}>❮</button>
 
-      <button className="hero-next">❯</button>
+      <button className={styles.heroNext}>❯</button>
 
     </section>
   );
