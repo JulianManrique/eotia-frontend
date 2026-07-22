@@ -42,8 +42,27 @@ const slides: HeroSlide[] = [
 
 
 export default function Hero() {
+
+  // Cambio automatico del slide cada 5 segundos 
   const [currentSlide, setCurrentSlide] = useState(0);
   const slide = slides[currentSlide];
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentSlide((prev) => (prev + 1) % slides.length);
+    }, 5000);
+    return () => clearInterval(interval);
+  }, []);
+
+  // Flechas para cambiar manualmente el slide
+  const nextSlide = () => {
+    setCurrentSlide((prev) => (prev + 1) % slides.length);
+  };
+
+  const prevSlide = () => {
+    setCurrentSlide((prev) =>
+      prev === 0 ? slides.length - 1 : prev - 1
+    );
+  };
   return (
     <section className={styles.hero}>
 
@@ -88,11 +107,17 @@ export default function Hero() {
 
       </div>
 
-      <button className={styles.heroPrev}>
+      <button
+        className={styles.heroPrev}
+        onClick={prevSlide}
+      >
         ❮
       </button>
 
-      <button className={styles.heroNext}>
+      <button
+        className={styles.heroNext}
+        onClick={nextSlide}
+      >
         ❯
       </button>
 
