@@ -27,15 +27,15 @@ const slides: HeroSlide[] = [
     subtitle: "DISEÑOS EXCLUSIVOS",
     description:
       "Diseñamos tortas personalizadas para bodas, cumpleaños y momentos únicos.",
-    image: "/hero-cake-2.jpeg",
+    image: "/hero-cake-2.png",
   },
   {
     id: 3,
-    title: "El sabor que\nrecuerdas siempre",
+    title: "Reuniones\neventos",
     subtitle: "INGREDIENTES PREMIUM",
     description:
-      "Ingredientes frescos, recetas artesanales y acabados que sorprenden.",
-    image: "/hero-cake-3.jpeg",
+      "Hacemos de tu evento, algo especial.",
+    image: "/hero-cake-3.png",
   },
 ];
 
@@ -122,9 +122,14 @@ export default function Hero() {
       </button>
 
       <div className={styles.heroDots}>
-        <span className={styles.active}></span>
-        <span></span>
-        <span></span>
+        {slides.map((_, index) => (
+          <span
+            key={index}
+            className={
+              index === currentSlide ? styles.active : ""
+            }
+          ></span>
+        ))}
       </div>
 
     </section>
