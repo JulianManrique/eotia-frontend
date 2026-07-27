@@ -46,11 +46,28 @@ export default function Hero() {
   // Cambio automatico del slide cada 5 segundos 
   const [currentSlide, setCurrentSlide] = useState(0);
   const slide = slides[currentSlide];
+  const [fade, setFade] = useState(true);
+
   useEffect(() => {
     const interval = setInterval(() => {
-      setCurrentSlide((prev) => (prev + 1) % slides.length);
+
+      // Comienza el desvanecimiento
+      setFade(false);
+
+      setTimeout(() => {
+
+        // Cambia el slide
+        setCurrentSlide((prev) => (prev + 1) % slides.length);
+
+        // Vuelve a aparecer
+        setFade(true);
+
+      }, 500);
+
     }, 5000);
+
     return () => clearInterval(interval);
+
   }, []);
 
   // Flechas para cambiar manualmente el slide
@@ -76,7 +93,10 @@ export default function Hero() {
 
       <div className={styles.overlay}></div>
 
-      <div className={styles.heroContent}>
+      <div
+        className={`${styles.heroContent} ${fade ? "" : styles.fadeOut
+          }`}
+      >
 
         <span className={styles.heroSubtitle}>
           {slide.subtitle}
@@ -125,9 +145,8 @@ export default function Hero() {
         {slides.map((_, index) => (
           <span
             key={index}
-            className={
-              index === currentSlide ? styles.active : ""
-            }
+            className={index === currentSlide ? styles.active : ""}
+            onClick={() => setCurrentSlide(index)}
           ></span>
         ))}
       </div>
