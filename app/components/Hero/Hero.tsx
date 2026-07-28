@@ -49,52 +49,57 @@ export default function Hero() {
   const [fade, setFade] = useState(true);
 
   useEffect(() => {
+
     const interval = setInterval(() => {
 
-      // Comienza el desvanecimiento
-      setFade(false);
+      changeSlide(
+        (currentSlide + 1) % slides.length
+      );
 
-      setTimeout(() => {
-
-        // Cambia el slide
-        setCurrentSlide((prev) => (prev + 1) % slides.length);
-
-        // Vuelve a aparecer
-        setFade(true);
-
-      }, 500);
-
-    }, 5000);
+    }, 8000);
 
     return () => clearInterval(interval);
 
-  }, []);
+  }, [currentSlide]);
 
-  // Flechas para cambiar manualmente el slide
-  const nextSlide = () => {
-    setCurrentSlide((prev) => (prev + 1) % slides.length);
-  };
 
-  const prevSlide = () => {
-    setCurrentSlide((prev) =>
-      prev === 0 ? slides.length - 1 : prev - 1
-    );
+  // 👇 ESTA FUNCIÓN FALTA EN TU CÓDIGO
+
+  const changeSlide = (newIndex: number) => {
+
+    if (newIndex === currentSlide) return;
+
+    setFade(false);
+
+    setTimeout(() => {
+
+      setCurrentSlide(newIndex);
+
+      setFade(true);
+
+    }, 500);
+
   };
   return (
     <section className={styles.hero}>
 
-      <Image
-        src={slide.image}
-        alt="Pastel EOTIA"
-        fill
-        priority
-        className={styles.backgroundImage}
-      />
+      <div
+        className={`${styles.imageContainer} ${fade ? "" : styles.imageFadeOut
+          }`}
+      >
+        <Image
+          src={slide.image}
+          alt="Pastel EOTIA"
+          fill
+          priority
+          className={styles.backgroundImage}
+        />
+      </div>
 
       <div className={styles.overlay}></div>
 
       <div
-        className={`${styles.heroContent} ${fade ? "" : styles.fadeOut
+        className={`${styles.heroContent} ${fade ? "" : styles.contentFadeOut
           }`}
       >
 
@@ -129,14 +134,24 @@ export default function Hero() {
 
       <button
         className={styles.heroPrev}
-        onClick={prevSlide}
+        onClick={() =>
+          changeSlide(
+            currentSlide === 0
+              ? slides.length - 1
+              : currentSlide - 1
+          )
+        }
       >
         ❮
       </button>
 
       <button
         className={styles.heroNext}
-        onClick={nextSlide}
+        onClick={() =>
+          changeSlide(
+            (currentSlide + 1) % slides.length
+          )
+        }
       >
         ❯
       </button>
@@ -146,8 +161,18 @@ export default function Hero() {
           <span
             key={index}
             className={index === currentSlide ? styles.active : ""}
-            onClick={() => setCurrentSlide(index)}
-          ></span>
+            onClick={() => changeSlide(index)}
+          />
+        ))}
+      </div>
+
+      <div className={styles.heroDots}>
+        {slides.map((_, index) => (
+          <span
+            key={index}
+            className={index === currentSlide ? styles.active : ""}
+            onClick={() => changeSlide(index)}
+          />
         ))}
       </div>
 
