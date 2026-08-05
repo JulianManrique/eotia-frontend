@@ -1,9 +1,12 @@
 import Link from "next/link";
+import styles from "./Catalog.module.css";
 
 export default function Catalog() {
   return (
-    <section className="catalog">
-      <h2>Nuestros Productos</h2>
+    <section className={styles.catalog}>
+      <h2 className={styles.catalogTitle}>
+        Nuestros Productos
+      </h2>
 
       <div className="catalog-container">
 
